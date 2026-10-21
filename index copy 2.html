@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>はじめてのWeb制作</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: #190f2ej;
+      color: #f2edff;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      padding: 24px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #252941;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: #8ca5ff;
+    }
+
+    nav a {
+      color: #ccccdd;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    .hero {
+      min-height: 75vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .tag {
+      color: #91a8ff;
+      letter-spacing: 4px;
+      font-size: 12px;
+    }
+
+    h1 {
+      font-size: clamp(36px, 7vw, 72px);
+      margin: 24px 0;
+      line-height: 1.2;
+    }
+
+    h1 span {
+      color: #8298ff;
+    }
+
+    .description {
+      color: #a9aec5;
+      line-height: 1.9;
+      max-width: 520px;
+    }
+
+    button {
+      margin-top: 28px;
+      padding: 15px 30px;
+      border: 0;
+      border-radius: 8px;
+      background: linear-gradient(90deg, #657cff, #a06bff);
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    button:hover {
+      transform: translateY(-3px);
+    }
+
+    #message {
+      color: #a9baff;
+      min-height: 24px;
+      margin-top: 20px;
+    }
+
+    footer {
+      padding: 24px;
+      text-align: center;
+      color: #6f7591;
+      border-top: 1px solid #252941;
+      font-size: 13px;
+    }
+    /* 上部ナビゲーション */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background: #100b20;
+  border-bottom: 1px solid #392957;
+}
+
+.logo {
+  color: #c3adff;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links a {
+  color: #f2edff;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.nav-links a:hover {
+  color: #c3adff;
+}/* スマホ対応 */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px 12px;
+  }
+
+  .nav-links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 30px;
+    overflow-wrap: anywhere;
+  }
+
+  button {
+    max-width: 100%;
+  }
+}
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">MY DIGITAL WORLD</div>
+    <nav>
+      <a href="#home">HOME</a>
+      <a href="#about">ABOUT</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <p class="tag">WELCOME TO MY WORLD</p>
+
+      <h1>
+        わかちゃん<br>
+        <span>大好きだよ.</span>
+      </h1 id="home"></h1>>
+
+      <p class="description" id="about">
+        愛してる？<br>
+        ならここを押して。
+        <span id="contact"></span>
+      <p id="message" class="contact-message">準備はいい？</p>
+<span id="services"></span>
+      <button id="startButton">ほんとに進みますか？</button>
+
+      <p id="message"></p>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 MY DIGITAL WORLD
+  </footer>
+
+  <script>
+    const button = document.getElementById("startButton");
+    const message = document.getElementById("message");
+
+    button.addEventListener("click", () => {
+      button.textContent = "うんち";
+    });
+  </script>
+</body>
+<nav class="navbar">
+  <a class="logo" href="#home">MY WEB</a>
+
+  <div class="nav-links">
+    <a href="#home">ホーム</a>
+    <a href="#services">サービス</a>
+    <a href="#contact">お問い合わせ</a>
+  </div>
+</nav>
+</html>
